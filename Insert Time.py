@@ -2,7 +2,7 @@
 
 '''
 :Title
-Insert Date
+Insert Time
 
 :Planguage
 Python
@@ -11,14 +11,14 @@ Python
 VoodooPad 3.5+
 
 :Description
-Inserts Date
+Inserts Time
 
 EOD
 '''
 VPScriptSuperMenuTitle = "GTD"
-VPScriptMenuTitle = "Insert Date"
+VPScriptMenuTitle = "Insert Time"
 VPShortcutMask = "control"
-VPShortcutKey = "J"
+VPShortcutKey = "m"
 
 import AppKit
 import time
@@ -28,6 +28,6 @@ def main(windowController, *args, **kwargs):
     document = windowController.document()
 
     if textView != None:
-        dateFormat = time.strftime("%Y-%m-%d")
+        dateFormat = time.strftime("hh:mm")
         textView.insertText_(dateFormat)
 
