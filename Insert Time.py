@@ -18,7 +18,7 @@ EOD
 VPScriptSuperMenuTitle = "GTD"
 VPScriptMenuTitle = "Insert Time"
 VPShortcutMask = "control"
-VPShortcutKey = "m"
+VPShortcutKey = "M"
 
 import AppKit
 import time
